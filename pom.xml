@@ -23,12 +23,10 @@
         <fastjson>1.2.76</fastjson>
         <!--未更新-->
         <commons.lang>2.6</commons.lang>
-        <!--未更新-->
-        <druid>1.2.1</druid>
+        <druid>1.2.22</druid>
         <pagehelper>2.1.0</pagehelper>
         <aliyun.sdk.oss>3.15.1</aliyun.sdk.oss>
-        <!--未更新-->
-        <knife4j>3.0.2</knife4j>
+        <knife4j>4.4.0</knife4j>
         <!--未更新-->
         <aspectj>1.9.4</aspectj>
         <jjwt>0.9.1</jjwt>
@@ -75,7 +73,7 @@
 
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
                 <version>${knife4j}</version>
             </dependency>
 
