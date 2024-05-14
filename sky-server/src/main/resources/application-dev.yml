@@ -7,3 +7,9 @@ sky:
     username: root
     password: vanssupremezack1
     type: com.alibaba.druid.pool.DruidDataSource
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: LTAI5tRH2fejVHT5yeuBxEP1
+    access-key-secret: XNDg4ds3lHrwMn6kXfiKLeMFVSKUaO
+    bucket-name: hushleadnews
+
