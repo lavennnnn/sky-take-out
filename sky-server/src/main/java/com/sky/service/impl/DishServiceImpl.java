@@ -149,7 +149,7 @@ public class DishServiceImpl implements DishService {
 
         Dish dish = new Dish();
 
-        BeanUtils.copyProperties(dish,dishDTO);
+        BeanUtils.copyProperties(dishDTO,dish);
 
         //修改菜品表基本信息
 

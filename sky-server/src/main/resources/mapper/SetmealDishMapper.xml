@@ -10,6 +10,21 @@
         </foreach>
     </insert>
 
+    <insert id="insertBatch">
+        insert into sky_take_out.setmeal_dish(setmeal_id, dish_id, name, price, copies) VALUES
+        <foreach collection="setmealDishes" item="sd" separator=",">
+            (#{sd.setmealId},#{sd.dishId},#{sd.name},#{sd.price},#{sd.copies})
+        </foreach>
+    </insert>
+
+    <delete id="deleteBySetmealIds">
+        delete from sky_take_out.setmeal_dish where setmeal_id in
+        <foreach collection="setmealIds" item="setmealId" separator="," open="(" close=")">
+            #{setmealId}
+        </foreach>
+
+    </delete>
+
 
     <select id="getSetmealIdsByDishIds" resultType="java.lang.Long">
         select setmeal_id from sky_take_out.setmeal_dish where dish_id in
