@@ -12,4 +12,10 @@ sky:
     access-key-id: LTAI5tRH2fejVHT5yeuBxEP1
     access-key-secret: XNDg4ds3lHrwMn6kXfiKLeMFVSKUaO
     bucket-name: hushleadnews
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: vanssupremezack1
+      database: 0
 
